@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/bg-forest.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.title {
+  width: 622px;
+  height: 63px;
+  top: 430px;
+  left: 409px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62.4px;
+  letter-spacing: 0%;
+  color: #d7eddb;
+  cursor: default;
+}
+
+.description {
+  height: 29px;
+  top: 513px;
+  left: 527px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: #b0b0b0;
+  cursor:default;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem;
+  width: 188px;
+  height: 32px;
+  top: 562px;
+  left: 626px;
+}
+
+.socialIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.2);
+}
+
+.hashtag {
+  width: 244px;
+  height: 51px;
+  top: 711px;
+  left: 598px;
+  color: #b0b0b0;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50.4px;
+  letter-spacing: 0%;
+  cursor:default;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    cursor: default;
+  }
+
+  .hashtag {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .socialIcons {
+    gap: 1rem;
+  }
+
+  .socialIcon {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
